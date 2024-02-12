@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+.button-section [type="button"] {
+  color: #4d5ae5;
+  background-color: rgba(231, 233, 252, 1);
+  cursor: pointer;
+}
+.button-section .Active {
+  color: rgb(255, 255, 255);
+  background-color: rgba(64, 75, 191, 1);
+}
+nav.button-section li {
+  list-style-type: none;
+}
+nav.button-section {
+  background-color: grey;
+  border-style: dotted;
+  border-color: rgba(77, 90, 229, 1);
+  padding: 12px, 24px, 12px, 24px;
+}
+section.HERO {
+  background-color: rgba(46, 47, 66, 1);
+}
+section.HERO button.ORDER-SERVICE {
+  color: white;
+  background-color: rgba(77, 90, 229, 1);
+  cursor: pointer;
+}
+section.HERO h1 {
+  color: white;
+}
+header nav.main-nav li {
+  list-style-type: none;
+}
+.removing-dots-services-section ul.services {
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+}
+.removing-dots-ourteam-section ul.team {
+  list-style: none;
+  background-color: rgba(244, 244, 253, 1);
+}
+footer {
+  background-color: rgba(46, 47, 66, 1);
+}
+footer p {
+  color: white;
+}
+section.images-first-row ul.images {
+  list-style-type: none;
+}
+section.images-second-row ul.images {
+  list-style-type: none;
+}
+section.images-third-row ul.images {
+  list-style-type: none;
+}
+.blue-half {
+  color: blue;
+}
+
+.black-half {
+  color: black;
+}
+section.main-contacts a:hover {
+  color: hotpink;
+}
+div.Strategy p {
+  font-size: 16px;
+  color: rgba(67, 68, 85, 1);
+}
+div.Strategy h3 {
+  font-weight: 500;
+  color: rgba(46, 47, 66, 1);
+  font-size: 20;
+}
+section.removing-dots-services-section h2 {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 700;
+  font-size: 36;
+  text-align: center;
+}
+section.removing-dots-ourteam-section h2 {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 700;
+  font: size 36px;
+  text-align: center;
+}
+section.removing-dots-ourteam-section div.team-information h3 {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 500;
+  font-size: 20;
+  text-align: center;
+}
+section.removing-dots-ourteam-section div.team-information p {
+  color: rgba(67, 68, 85, 1);
+  font-size: 20;
+  text-align: center;
+}
+section.images-first-row h3 {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 500;
+  font-size: 20;
+}
+section.images-second-row h3 {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 500;
+  font-size: 20;
+}
+section.images-third-row h3 {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 500;
+  font-size: 20;
+}
+section.images-first-row p {
+  color: rgba(67, 68, 85, 1);
+  font-size: 16;
+}
+section.images-second-row p {
+  color: rgba(67, 68, 85, 1);
+  font-size: 16;
+}
+section.images-third-row p {
+  color: rgba(67, 68, 85, 1);
+  font-size: 16;
+}
