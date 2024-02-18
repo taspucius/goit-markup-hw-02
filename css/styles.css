@@ -126,3 +126,6 @@ section.images-third-row p {
   color: rgba(67, 68, 85, 1);
   font-size: 16;
 }
+nav.button-section [type="button"]:hover {
+  color: hotpink;
+}
