@@ -16,6 +16,7 @@
 body {
   font-family: var(--main-font);
   color: var(--white-color);
+  min-height: 100vh;
 }
 .button-section [type="button"] {
   color: var(--dark-blue-color);
@@ -73,7 +74,6 @@ section.HERO button.ORDER-SERVICE {
   height: 56px;
   top: 428px;
   left: 638px
-  radius: 4px;
 }
 
 section.HERO h1 {
