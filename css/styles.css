@@ -1,131 +1,226 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --white-color: rgba(255, 255, 255, 1);
+  --blue-color: rgba(77, 90, 229, 1);
+  --light-blue-color: rgba(231, 233, 252, 1);
+  --grey-color: grey;
+  --dark-grey-color: rgba(46, 47, 66, 1);
+  --light-grey-color: rgba(244, 244, 253, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --hotpink-color: hotpink;
+  --dark-blue-color: #4d5ae5;
+  --light-purple-color: rgba(64, 75, 191, 1);
+  --dark-purple-color: rgba(67, 68, 85, 1);
+}
+
 body {
-  font-family: "Roboto", sans-serif;
-  color: rgba(255, 255, 255, 1);
+  font-family: var(--main-font);
+  color: var(--white-color);
 }
 .button-section [type="button"] {
-  color: #4d5ae5;
-  background-color: rgba(231, 233, 252, 1);
+  color: var(--dark-blue-color);
+  background-color: var(--light-blue-color);
   cursor: pointer;
+  border: none; /
 }
+
 .button-section .Active {
-  color: rgb(255, 255, 255);
-  background-color: rgba(64, 75, 191, 1);
+  color: var(--white-color);
+  background-color: var(--light-purple-color);
 }
+
 nav.button-section li {
   list-style-type: none;
 }
+
 nav.button-section {
-  background-color: grey;
-  border-style: dotted;
-  border-color: rgba(77, 90, 229, 1);
-  padding: 12px, 24px, 12px, 24px;
+  background-color: var(--white-color);
+  border: none;
+  display: flex;
+  justify-content: center;
 }
+
+nav.button-section li {
+  margin: 0 5px;
+}
+
+nav.button-section li:first-child {
+  margin-left: 0;
+}
+nav.button-section ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
 section.HERO {
-  background-color: rgba(46, 47, 66, 1);
+  background-color: var(--dark-grey-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
 section.HERO button.ORDER-SERVICE {
-  color: white;
-  background-color: rgba(77, 90, 229, 1);
+  color: var(--white-color);
+  background-color: var(--blue-color);
   cursor: pointer;
 }
+
 section.HERO h1 {
-  color: white;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
 }
+
 header nav.main-nav li {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
+
 .removing-dots-services-section ul.services {
   list-style-type: none;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
 }
+
 .removing-dots-ourteam-section ul.team {
   list-style: none;
-  background-color: rgba(244, 244, 253, 1);
+  background-color: var(--light-grey-color);
+  display: flex;
+  justify-content: center;
 }
+
 footer {
-  background-color: rgba(46, 47, 66, 1);
+  background-color: var(--dark-grey-color);
 }
+
 footer p {
-  color: white;
+  color: var(--white-color);
 }
-section.images-first-row ul.images {
-  list-style-type: none;
-}
-section.images-second-row ul.images {
-  list-style-type: none;
-}
+
+section.images-first-row ul.images,
+section.images-second-row ul.images,
 section.images-third-row ul.images {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
+
 .blue-half {
-  color: blue;
+  color: var(--blue-color);
 }
 
 .black-half {
-  color: black;
+  color: var(--black-color);
 }
+
 section.main-contacts a:hover {
-  color: hotpink;
+  color: var(--hotpink-color);
 }
+
 div.Strategy p {
   font-size: 16px;
-  color: rgba(67, 68, 85, 1);
+  color: var(--dark-purple-color);
+  display: flex;
+  justify-content: center;
 }
+
 div.Strategy h3 {
   font-weight: 500;
-  color: rgba(46, 47, 66, 1);
-  font-size: 20;
+  color: var(--dark-grey-color);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
-section.removing-dots-services-section h2 {
-  color: rgba(46, 47, 66, 1);
-  font-weight: 700;
-  font-size: 36;
-  text-align: center;
+div.Strategy {
+  display: flex;
 }
+section.removing-dots-services-section h2,
 section.removing-dots-ourteam-section h2 {
-  color: rgba(46, 47, 66, 1);
+  color: var(--dark-grey-color);
   font-weight: 700;
-  font: size 36px;
+  font-size: 36px;
   text-align: center;
 }
+
 section.removing-dots-ourteam-section div.team-information h3 {
-  color: rgba(46, 47, 66, 1);
+  color: var(--dark-grey-color);
   font-weight: 500;
-  font-size: 20;
+  font-size: 20px;
   text-align: center;
 }
+
 section.removing-dots-ourteam-section div.team-information p {
-  color: rgba(67, 68, 85, 1);
-  font-size: 20;
+  color: var(--dark-purple-color);
+  font-size: 20px;
   text-align: center;
 }
-section.images-first-row h3 {
-  color: rgba(46, 47, 66, 1);
-  font-weight: 500;
-  font-size: 20;
-}
-section.images-second-row h3 {
-  color: rgba(46, 47, 66, 1);
-  font-weight: 500;
-  font-size: 20;
-}
+
+section.images-first-row h3,
+section.images-second-row h3,
 section.images-third-row h3 {
-  color: rgba(46, 47, 66, 1);
+  color: var(--dark-grey-color);
   font-weight: 500;
-  font-size: 20;
+  font-size: 20px;
+  text-align: center;
 }
-section.images-first-row p {
-  color: rgba(67, 68, 85, 1);
-  font-size: 16;
-}
-section.images-second-row p {
-  color: rgba(67, 68, 85, 1);
-  font-size: 16;
-}
+
+section.images-first-row p,
+section.images-second-row p,
 section.images-third-row p {
-  color: rgba(67, 68, 85, 1);
-  font-size: 16;
+  color: var(--dark-purple-color);
+  font-size: 16px;
+  text-align: center;
 }
+
 nav.button-section [type="button"]:hover {
-  color: hotpink;
+  color: var(--hotpink-color);
+}
+header {
+  display: flex; /* Utilizăm flexbox pentru a aranja elementele în linie */
+  justify-content: space-between; /* Distribuie spațiul disponibil între elemente */
+  align-items: center; /* Aliniază vertical elementele */
+  padding: 10px 20px; /* Adaugă un spațiu între marginea elementului header și conținut */
+}
+
+nav.main-nav ul {
+  display: flex; 
+  list-style: none; /* Elimină stilul implicit al listei */
+  padding: 0; /* Elimină marginile implicite ale listei */
+}
+
+nav.main-nav li {
+  margin-left: 20px; /* Spațiere între elementele listei */
+}
+
+.main-contacts {
+  display: flex; 
+  gap: 10px; /* Adaugă un spațiu între elementele din contacte */
+}
+header {
+  display: flex;
+  align-items: center; /* Alinierea verticală a elementelor în header */
+  justify-content: space-between; /* Alinierea orizontală a elementelor */
+}
+
+.main-nav {
+  margin-right: auto; /* Spațiu liber la dreapta pentru a alinia elementele la stânga */
+}
+
+.main-contacts {
+  margin-left: auto; /* Spațiu liber la stânga pentru a alinia elementele la dreapta */
+}
+.Strategy {
+  display: flex; 
+  justify-content: space-between; /* Distribuim spațiul disponibil între elementele din container */
+  flex-wrap: wrap; /* Permiterea împachetării elementelor pe mai multe rânduri */
+}
+
+.Strategy > div {
+  width: calc(25% - 20px); /* Setăm lățimea fiecărui container pentru a ocupa 25% din lățimea totală și eliminăm spațiul dintre ele */
+  margin-bottom: 20px; /* Spațierea între fiecare pereche de h3 și p */
 }
