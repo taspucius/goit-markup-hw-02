@@ -60,18 +60,30 @@ section.HERO {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* width: 1440px;
+  height: 600px;
+  top: 72px; */
 }
 
 section.HERO button.ORDER-SERVICE {
   color: var(--white-color);
   background-color: var(--blue-color);
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  top: 428px;
+  left: 638px
+  radius: 4px;
 }
 
 section.HERO h1 {
   color: var(--white-color);
   display: flex;
   justify-content: center;
+  /* width: 496px;
+  height: 120px;
+  top: 260px;
+  left: 472px; */
 }
 
 header nav.main-nav li {
@@ -89,11 +101,12 @@ header nav.main-nav li {
 
 .removing-dots-ourteam-section ul.team {
   list-style: none;
-  background-color: var(--light-grey-color);
   display: flex;
   justify-content: center;
 }
-
+.removing-dots-ourteam-section{
+  background-color: var(--light-grey-color);
+}
 footer {
   background-color: var(--dark-grey-color);
 }
@@ -176,7 +189,6 @@ section.images-third-row p {
   font-size: 16px;
   text-align: center;
 }
-
 nav.button-section [type="button"]:hover {
   color: var(--hotpink-color);
 }
@@ -223,4 +235,25 @@ header {
 .Strategy > div {
   width: calc(25% - 20px); /* Setăm lățimea fiecărui container pentru a ocupa 25% din lățimea totală și eliminăm spațiul dintre ele */
   margin-bottom: 20px; /* Spațierea între fiecare pereche de h3 și p */
+}
+section.images-first-row ul.images li,
+section.images-second-row ul.images li,
+section.images-third-row ul.images li {
+  margin-right: 20px; /* Adaugă spațiu de 20px între imaginile din fiecare rând */
+}
+
+/* Pentru a nu adăuga spațiu după ultima imagine din fiecare rând */
+section.images-first-row ul.images li:last-child,
+section.images-second-row ul.images li:last-child,
+section.images-third-row ul.images li:last-child {
+  margin-right: 0; /* Elimină spațiul după ultima imagine din fiecare rând */
+}
+section.removing-dots-services-section ul[class="services"] li {
+  margin-right: 20px;
+}
+section.removing-dots-services-section ul[class="services"] li:last-child {
+margin-right: 0;
+}
+section.removing-dots-ourteam-section ul[class="team"] li {
+  margin-right: 20px;
 }
