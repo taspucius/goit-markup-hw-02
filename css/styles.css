@@ -1,259 +1,209 @@
 :root {
-  --main-font: "Roboto", sans-serif;
-  --white-color: rgba(255, 255, 255, 1);
-  --blue-color: rgba(77, 90, 229, 1);
-  --light-blue-color: rgba(231, 233, 252, 1);
-  --grey-color: grey;
-  --dark-grey-color: rgba(46, 47, 66, 1);
-  --light-grey-color: rgba(244, 244, 253, 1);
-  --black-color: rgba(0, 0, 0, 1);
-  --hotpink-color: hotpink;
-  --dark-blue-color: #4d5ae5;
-  --light-purple-color: rgba(64, 75, 191, 1);
-  --dark-purple-color: rgba(67, 68, 85, 1);
+  --link-color: #000000;
+  --logo-font-family: "Raleway", sans-serif;
+  --text-font-family: "Roboto", sans-serif;
+  --body-text-color: #434455;
+  --heading-text-color: #2e2f42;
+  --main-background-color: #ffffff;
+  --brand-color: #4d5ae5;
+  --secondary-bkg-color: #f4f4fd;
+  --hover-color: #404bbf;
 }
 
-body {
-  font-family: var(--main-font);
-  color: var(--white-color);
-  min-height: 100vh;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.button-section [type="button"] {
-  color: var(--dark-blue-color);
-  background-color: var(--light-blue-color);
-  cursor: pointer;
-  border: none; /
+section {
+  padding: 94px 0;
+  width: 1200px;
 }
-
-.button-section .Active {
-  color: var(--white-color);
-  background-color: var(--light-purple-color);
-}
-
-nav.button-section li {
-  list-style-type: none;
-}
-
-nav.button-section {
-  background-color: var(--white-color);
-  border: none;
+.container {
+  max-width: 1200px;
   display: flex;
   justify-content: center;
 }
 
-nav.button-section li {
-  margin: 0 5px;
+.main-page {
+  font-family: var(--text-font-family);
+  color: var(--body-text-color);
+  font-size: 16px;
 }
 
-nav.button-section li:first-child {
-  margin-left: 0;
+.global-header .logo,
+.footer-section .logo {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: var(--logo-font-family);
+  font-weight: 800;
 }
-nav.button-section ul {
+
+.global-header {
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid var(--secondary-bkg-color);
+}
+.logo > .navy-blue {
+  color: var(--main-background-color);
+}
+.logo > .iris-blue {
+  color: #4d5ae5;
+}
+.logo > .cloud {
+  color: var(--link-color);
+}
+.logo {
+  width: 115px;
+  height: 24px;
+  top: 24px;
+  left: 156px;
+}
+.main-nav {
+  width: 261px;
+  height: 24px;
+  top: 24px;
+  left: 347px;
+  gap: 40px;
+}
+.menu-items {
+  display: flex;
   list-style-type: none;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
+  width: 48px;
+  height: 24px;
+  gap: 10px;
+  flex-direction: row;
 }
-
-section.HERO {
-  background-color: var(--dark-grey-color);
+.menu-items > li {
+  font-family: var(--text-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--heading-text-color);
+}
+.main-contacts > a {
+  font-family: var(--text-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--body-text-color);
+}
+.header-container {
+  color: var(--main-background-color);
+  border: 0px, 0px, 1px, 0px;
+  border-bottom: 1px solid;
+  border-color: #e7e9fc;
+}
+.hero-section {
+  background-color: #2e2f42;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  /* width: 1440px;
-  height: 600px;
-  top: 72px; */
+  min-width: 1200px;
 }
 
-section.HERO button.ORDER-SERVICE {
-  color: var(--white-color);
-  background-color: var(--blue-color);
-  cursor: pointer;
+.hero-section > h1 {
+  color: #ffffff;
+  width: 204px;
+}
+
+.order-button {
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  padding: 16px, 32px, 16px, 32px;
+  border-color: #4d5ae5;
+  color: #fff;
+  font-weight: 500;
   width: 169px;
   height: 56px;
-  top: 428px;
-  left: 638px
-}
-
-section.HERO h1 {
-  color: var(--white-color);
   display: flex;
-  justify-content: center;
-  /* width: 496px;
-  height: 120px;
-  top: 260px;
-  left: 472px; */
-}
-
-header nav.main-nav li {
-  list-style-type: none;
-  display: flex;
+  align-items: center;
   justify-content: center;
 }
-
-.removing-dots-services-section ul.services {
-  list-style-type: none;
-  background-color: var(--white-color);
-  display: flex;
-  justify-content: center;
+.order-button:hover {
+  background-color: var(--hover-color);
 }
-
-.removing-dots-ourteam-section ul.team {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.removing-dots-ourteam-section{
-  background-color: var(--light-grey-color);
-}
-footer {
-  background-color: var(--dark-grey-color);
-}
-
-footer p {
-  color: var(--white-color);
-}
-
-section.images-first-row ul.images,
-section.images-second-row ul.images,
-section.images-third-row ul.images {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-.blue-half {
-  color: var(--blue-color);
-}
-
-.black-half {
-  color: var(--black-color);
-}
-
-section.main-contacts a:hover {
-  color: var(--hotpink-color);
-}
-
-div.Strategy p {
-  font-size: 16px;
-  color: var(--dark-purple-color);
-  display: flex;
-  justify-content: center;
-}
-
-div.Strategy h3 {
-  font-weight: 500;
-  color: var(--dark-grey-color);
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-}
-div.Strategy {
-  display: flex;
-}
-section.removing-dots-services-section h2,
-section.removing-dots-ourteam-section h2 {
-  color: var(--dark-grey-color);
+h3,
+h2 {
   font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-}
-
-section.removing-dots-ourteam-section div.team-information h3 {
-  color: var(--dark-grey-color);
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-}
-
-section.removing-dots-ourteam-section div.team-information p {
-  color: var(--dark-purple-color);
-  font-size: 20px;
-  text-align: center;
-}
-
-section.images-first-row h3,
-section.images-second-row h3,
-section.images-third-row h3 {
-  color: var(--dark-grey-color);
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-}
-
-section.images-first-row p,
-section.images-second-row p,
-section.images-third-row p {
-  color: var(--dark-purple-color);
-  font-size: 16px;
-  text-align: center;
-}
-nav.button-section [type="button"]:hover {
-  color: var(--hotpink-color);
-}
-header {
-  display: flex; /* Utilizăm flexbox pentru a aranja elementele în linie */
-  justify-content: space-between; /* Distribuie spațiul disponibil între elemente */
-  align-items: center; /* Aliniază vertical elementele */
-  padding: 10px 20px; /* Adaugă un spațiu între marginea elementului header și conținut */
-}
-
-nav.main-nav ul {
-  display: flex; 
-  list-style: none; /* Elimină stilul implicit al listei */
-  padding: 0; /* Elimină marginile implicite ale listei */
-}
-
-nav.main-nav li {
-  margin-left: 20px; /* Spațiere între elementele listei */
-}
-
-.main-contacts {
-  display: flex; 
-  gap: 10px; /* Adaugă un spațiu între elementele din contacte */
-}
-header {
+  color: var(--body-text-color);
   display: flex;
-  align-items: center; /* Alinierea verticală a elementelor în header */
-  justify-content: space-between; /* Alinierea orizontală a elementelor */
+}
+.feature-section {
+  display: flex;
+  justify-content: center;
+}
+.features {
+  list-style-type: none;
+  display: flex;
+}
+.features > li {
+  width: 264px;
+  padding-left: 24px;
+}
+.offer-images {
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  gap: 20px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.team-section {
+  background-color: var(--secondary-bkg-color);
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.team-information {
+  background-color: var(--secondary-bkg-color);
+  position: relative;
+}
+body {
+  margin: 0;
+  font-family: var(--text-font-family);
+  color: var(--body-text-color);
 }
 
-.main-nav {
-  margin-right: auto; /* Spațiu liber la dreapta pentru a alinia elementele la stânga */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* pentru a centra containerul pe orizontală */
+  padding: 0 20px;
 }
-
-.main-contacts {
-  margin-left: auto; /* Spațiu liber la stânga pentru a alinia elementele la dreapta */
+.footer-section {
+  background-color: #2e2f42;
+  color: var(--secondary-bkg-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 1200px;
+  padding: 40px 100px;
+  white-space: nowrap;
 }
-.Strategy {
-  display: flex; 
-  justify-content: space-between; /* Distribuim spațiul disponibil între elementele din container */
-  flex-wrap: wrap; /* Permiterea împachetării elementelor pe mai multe rânduri */
+.container > .header-container {
+  display: flex;
+  justify-content: center;
 }
-
-.Strategy > div {
-  width: calc(25% - 20px); /* Setăm lățimea fiecărui container pentru a ocupa 25% din lățimea totală și eliminăm spațiul dintre ele */
-  margin-bottom: 20px; /* Spațierea între fiecare pereche de h3 și p */
+.filter-section {
+  display: flex;
+  justify-content: center;
 }
-section.images-first-row ul.images li,
-section.images-second-row ul.images li,
-section.images-third-row ul.images li {
-  margin-right: 20px; /* Adaugă spațiu de 20px între imaginile din fiecare rând */
+.filter-section > .filter-buttons {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
 }
-
-/* Pentru a nu adăuga spațiu după ultima imagine din fiecare rând */
-section.images-first-row ul.images li:last-child,
-section.images-second-row ul.images li:last-child,
-section.images-third-row ul.images li:last-child {
-  margin-right: 0; /* Elimină spațiul după ultima imagine din fiecare rând */
-}
-section.removing-dots-services-section ul[class="services"] li {
-  margin-right: 20px;
-}
-section.removing-dots-services-section ul[class="services"] li:last-child {
-margin-right: 0;
-}
-section.removing-dots-ourteam-section ul[class="team"] li {
-  margin-right: 20px;
+.filter-buttons > .button {
+  background-color: #404bbf;
 }
